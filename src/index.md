@@ -5,36 +5,38 @@
 
 ## Open-Source Projects
 
-- [dungeon][1] - A console game to get familiar with java
-- [rest-api-cli][2] - A simple node REST API boilerplate
-- [rsvp][3] - An experiment to learn about building a REST API using Rust
-- [run-task][4] - A simple-as-possible node task runner
-- [scl-to-frequency][5] - Converts a Scala file (.scl) to a javascript array of frequencies
+- [scala-tune][1] - mongo/node/angular app to browsw .scl tuning files
+- [dungeon][2] - A console game to get familiar with java
+- [rest-api-cli][3] - A simple node REST API boilerplate
+- [rsvp][4] - An experiment to learn about building a REST API using Rust
+- [run-task][5] - A simple-as-possible node task runner
+- [scl-to-frequency][6] - Converts a Scala file (.scl) to a javascript array of frequencies
 
-[1]: https://github.com/jcpst/dungeon
-[2]: https://www.npmjs.com/package/rest-api-cli
-[3]: https://github.com/jcpst/rsvp
-[4]: https://github.com/jcpst/run-task
-[5]: https://github.com/jcpst/scl-to-frequency
+[1]: https://jcpst.github.io/scala-tune
+[2]: https://github.com/jcpst/dungeon
+[3]: https://www.npmjs.com/package/rest-api-cli
+[4]: https://github.com/jcpst/rsvp
+[5]: https://github.com/jcpst/run-task
+[6]: https://github.com/jcpst/scl-to-frequency
 
 ## Musical Output
 
-- [soundcloud page][6]
-- [bandcamp page][7]
+- [soundcloud page][7]
+- [bandcamp page][8]
 
 ### bands
 
-- [jpacks][8] *2015*
-- [your face][9] *2009-2010*
-- [monitors][10] *2004-07*
-- [senator bigsby and the screws][11] *2001-04*
+- [jpacks][9] *2015*
+- [your face][10] *2009-2010*
+- [monitors][11] *2004-07*
+- [senator bigsby and the screws][12] *2001-04*
 
-[6]: https://soundcloud.com/josephpost
-[7]: https://josephpost.bandcamp.com/
-[8]: https://archive.org/details/JPACKSRPM2015Mp3
-[9]: http://yourface.bandcamp.com
-[10]: http://monitors.bandcamp.com
-[11]: http://sbats.bandcamp.com
+[7]: https://soundcloud.com/josephpost
+[8]: https://josephpost.bandcamp.com/
+[9]: https://archive.org/details/JPACKSRPM2015Mp3
+[10]: http://yourface.bandcamp.com
+[11]: http://monitors.bandcamp.com
+[12]: http://sbats.bandcamp.com
 
 ## Recording Credits
 
