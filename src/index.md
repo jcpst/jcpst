@@ -5,7 +5,7 @@
 
 ## Open-Source Projects
 
-- [scala-tune][1] - mongo/node/angular app to browsw .scl tuning files
+- [scala-tune][1] - mongo/node/angular app to browse .scl tuning files
 - [dungeon][2] - A console game to get familiar with java
 - [rest-api-cli][3] - A simple node REST API boilerplate
 - [rsvp][4] - An experiment to learn about building a REST API using Rust
