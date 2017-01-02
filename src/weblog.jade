@@ -1,19 +1,19 @@
 //- Grab the h1 from the markdown file,
 //- so it can be displayed as a description
 //- in the list of links.
-- function getTitle(content) {
+- function getTitle (content) {
 -     if (content.indexOf('<!-- body -->') == -1) {
--         return '';
+-         return ''
 -     } else {
 -         return content.split('<!-- body -->')[0];
 -     }
 - }
 
+h2 WEBLOG
 ul
     each blog in _(public.blog._contents).reverse().value()
         - var date = blog.replace(/\.[^/.]+$/, '')
         unless date === 'index'
             li
                 a(href='/blog/#{date}')= date
-                - var stripTags = /<\/?h1[^>]*>/
-                != ' ' + getTitle(partial('/blog/' + date).replace(stripTags, ''))
+                != ' ' + getTitle(partial('/blog/' + date).replace(/<\/?h1[^>]*>/, ''))

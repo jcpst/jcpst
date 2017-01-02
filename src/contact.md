@@ -1,3 +1,4 @@
-[email](mailto:joe@jcpst.com)
+## CONTACT
 
-[public key](/pgp.txt)
+- [email](mailto:joe@jcpst.com)
+- [public key](/pgp.txt)
