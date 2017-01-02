@@ -2,6 +2,9 @@
   "name": "jcpst.com",
   "version": "3.0.2",
   "description": "Homepage for Joseph Post",
+  "engines": {
+    "node": "<=4"
+  },
   "scripts": {
     "build": "harp compile src public",
     "deploy": "harp compile src /tmp/__temp_static_content",
