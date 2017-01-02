@@ -3,17 +3,14 @@ html
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width')
-        link(type='text/css' rel='stylesheet' href='https://unpkg.com/hack/dist/hack.css')
-        link(type='text/css' rel='stylesheet' href='https://unpkg.com/hack/dist/standard.css')
-    body.standard
-        .main.container
-            h1 jcpst.com
-            p.
-                Hi, I'm Joseph Post. I'm a programmer, composer, and musician
-                in the Kansas City area.
-            != yield
-            hr
-        .push
-    .footer
-        .container
-            em last deployment: #{new Date()} (#[a(href='https://github.com/jcpst/jcpst') source])
+        link(type='text/css' rel='stylesheet' href='/assets/style/tacit.min.css')
+    body
+        h1 jcpst.com
+        a(href='/') home
+        each link in navlinks
+            strong #{' || '}
+            a(href='/' + link)= link
+        hr
+        != yield
+        hr
+        em last deployment: #{new Date()} (#[a(href='https://github.com/jcpst/jcpst') source])

@@ -2,10 +2,11 @@
   "_layout": {
    "navlinks": [
      "about",
+     "articles",
+     "code",
+     "credits",
      "contact",
-     "music",
-     "recipes",
-      "weblog"
+     "music"
     ]
   }
 }
