@@ -16,4 +16,4 @@ ul
         unless date === 'index'
             li
                 a(href='/blog/#{date}')= date
-                != ' ' + getTitle(partial('/blog/' + date).replace(/<\/?h1[^>]*>/, ''))
+                != ' ' + getTitle(partial('/blog/' + date).replace(/<\/?h2[^>]*>/, ''))
