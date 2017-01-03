@@ -5,12 +5,14 @@ html
         meta(name='viewport' content='width=device-width')
         link(type='text/css' rel='stylesheet' href='/assets/style/tacit.min.css')
     body
-        h1 jcpst.com
-        a(href='/') home
-        each link in navlinks
-            strong #{' || '}
-            a(href='/' + link)= link
-        hr
-        != yield
-        hr
-        em last deployment: #{new Date()} (#[a(href='https://github.com/jcpst/jcpst') source])
+        section
+            header: nav 
+                ul: li jcpst.com
+                a(href='/') home
+                each link in navlinks
+                    span #{' . '}
+                    a(href='/' + link)= link
+            article
+                != yield
+            footer
+                span last deployment: #{new Date()} (#[a(href='https://github.com/jcpst/jcpst') source])
