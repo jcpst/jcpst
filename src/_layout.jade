@@ -15,3 +15,8 @@ html
         br
         section.container
             != yield
+        br
+        .container last deployment: 
+          em #{new Date().toLocaleString()}
+          &nbsp
+          span (#[a(href='https://github.com/jcpst/jcpst') source])
