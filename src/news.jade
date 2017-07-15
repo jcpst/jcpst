@@ -9,11 +9,11 @@
 -     }
 - }
 
-h2 WEBLOG
+h2 NEWS
 ul
-    each blog in _(public.blog._contents).reverse().value()
-        - var date = blog.replace(/\.[^/.]+$/, '')
+    each article in _(public.article._contents).reverse().value()
+        - var date = article.replace(/\.[^/.]+$/, '')
         unless date === 'index'
             li
-                a(href='/blog/#{date}')= date
-                != ' ' + getTitle(partial('/blog/' + date).replace(/<\/?h2[^>]*>/, ''))
+                a(href='/article/#{date}')= date
+                != ' ' + getTitle(partial('/article/' + date).replace(/<\/?h2[^>]*>/, ''))

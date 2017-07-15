@@ -5,3 +5,4 @@ build
 
 # ignore generated files
 src/_generated/
+public

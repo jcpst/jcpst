@@ -29,6 +29,8 @@
 * Hot & Ugly
 * Ivan Neville's Dumpstaphunk
 * Jacob Fred Jazz Odyssey
+* John Clark
+* Mississippi Flapjacks
 * Mountain Sprout
 * Railroad Earth
 * Scott Tichenor (creator of [mandolincafe.com](http://www.mandolincafe.com/))
