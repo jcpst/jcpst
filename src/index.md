@@ -1,1 +1,0 @@
-Hi, I'm Joseph Post. I'm a programmer, composer, and musician in the Kansas City area.

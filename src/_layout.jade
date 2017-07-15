@@ -3,16 +3,15 @@ html
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width')
-        link(type='text/css' rel='stylesheet' href='/assets/style/tacit.min.css')
+        link(type='text/css' rel='stylesheet' href='/assets/style/min.css')
+        link(type='text/css' rel='stylesheet' href='/assets/style/style.css')
     body
-        section
-            header: nav 
-                ul: li jcpst.com
-                a(href='/') home
+        nav.nav(tabindex='-1' onclick='this.focus()')
+            .container
+                a.pagename.current(href='/') jcpst.com
                 each link in navlinks
-                    span #{' . '}
                     a(href='/' + link)= link
-            article
-                != yield
-            footer
-                span last deployment: #{new Date()} (#[a(href='https://github.com/jcpst/jcpst') source])
+        button.btn.btn-close.ntm.sm x
+        br
+        section.container
+            != yield
