@@ -5,6 +5,7 @@ html
         meta(name='viewport' content='width=device-width')
         link(type='text/css' rel='stylesheet' href='/assets/style/min.css')
         link(type='text/css' rel='stylesheet' href='/assets/style/style.css')
+        link(type='text/css' rel='stylesheet' href='/assets/style/prism.css')
     body
         nav.nav(tabindex='-1' onclick='this.focus()')
             .container
@@ -13,10 +14,11 @@ html
                     a(href='/' + link)= link
         button.btn.btn-close.btn-sm x
         br
-        section.container
+        section.container: .container
             != yield
         br
         .container last deployment: 
-          em #{new Date().toLocaleString()}
-          &nbsp
-          span (#[a(href='https://github.com/jcpst/jcpst') source])
+            em #{new Date().toLocaleString()}
+            &nbsp
+            span (#[a(href='https://github.com/jcpst/jcpst') source])
+        script(src='/assets/prism.js')

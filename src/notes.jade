@@ -9,11 +9,11 @@
 -     }
 - }
 
-h2 NEWS
+h2 NOTES
 ul
-    each article in _(public.article._contents).reverse().value()
-        - var date = article.replace(/\.[^/.]+$/, '')
+    each note in _(public.note._contents).reverse().value()
+        - var date = note.replace(/\.[^/.]+$/, '')
         unless date === 'index'
             li
-                a(href='/article/#{date}')= date
-                != ' ' + getTitle(partial('/article/' + date).replace(/<\/?h2[^>]*>/, ''))
+                a(href='/note/#{date}')= date
+                != ' ' + getTitle(partial('/note/' + date).replace(/<\/?h2[^>]*>/, ''))
