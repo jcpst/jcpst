@@ -45,7 +45,7 @@ const Thead = columns =>
         h('th', null, column))))
 
 const Tbody = data =>
-  h('tbody', null,data.map(row =>
+  h('tbody', null, data.map(row =>
     h('tr', null, 
       Object.keys(row).filter(columnNames).map(key => 
         h('td', null, key === 'population' ? row[key].toLocaleString() : row[key])))))
