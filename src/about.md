@@ -1,20 +1,17 @@
 ## INTERESTS 
 
 - analog synthesizers
+- amplifiers
 - Arch Linux
 - baritone guitars
-- Bash
 - Beethoven piano sonatas
 - craft beer (IPAs)
-- cycling
-- metal
-- DevOps
+- metal (death/black/doom/etc)
 - functional programming
 - just intonation
 - my family
 - nature
 - Node.js
-- tube amps
 - vegan cooking
 - wandering around
 - Zsh
