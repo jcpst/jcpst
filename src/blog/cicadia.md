@@ -1,5 +1,6 @@
 ## CiCaDiA is out!
 
+_2017, July 15th_
 <!-- body -->
 
 I just finished mixing and mastering my buddy John Clark's latest album, _CiCaDiA_. 

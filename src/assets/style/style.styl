@@ -1,30 +1,65 @@
+html
+  font-family Arial, Helvetica, sans-serif
+  box-sizing border-box
+  font-size 1.4em
+
+*, *:before, *:after
+  box-sizing: inherit
+
 body
-  background-color #d9c8ab
-
-blockquote
-  font-style italic
-  font-size 0.9em
-  color #5a597c
-  padding 0 1em
-  margin 0
-  border-left 3px solid grey
-
-pre
-  margin-right 2em
-
-section
-  border solid #616161 4px
-  border-radius 10px
-  background #dcdcdc
+  background-color #FDFDFD
 
 a
   color #151eca
   text-decoration none
 
+// from here: https://stackoverflow.com/a/17515230/3957261
 ul
   padding 0
+  display: table
   li
     list-style none
+    display: table-row
   li:before
     content '\21e8 '
     padding-right 0.5em
+    display: table-cell
+    text-align: right
+
+main, header
+  padding-bottom: 3em
+  max-width: 780px
+  margin-left: auto
+  margin-right: auto
+
+nav
+  float: right
+
+blockquote
+  padding: 1.5em
+  background: #eeeeff
+  font-style: italic
+
+p
+  padding-bottom: 0.5em
+
+.updated
+  border-top 0
+  border-right 0
+  border-left 0
+
+.navlink
+  color #222
+  font-variant: small-caps
+  text-decoration: underline
+  margin-right: 2em
+
+.tbl
+  width 100%
+
+#name
+  text-shadow grey 1px 1px 2px
+  color #000
+  font-size 1.5em
+  font-variant small-caps
+  float: left

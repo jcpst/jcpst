@@ -13,6 +13,10 @@
 - [soundcloud page][7]
 - [bandcamp page][8]
 
+### audio engineering
+
+[recording credits][14]
+
 [7]: https://soundcloud.com/josephpost
 [8]: https://josephpost.bandcamp.com/
 [9]: https://archive.org/details/JPACKSRPM2015Mp3
@@ -20,3 +24,4 @@
 [11]: http://monitors.bandcamp.com
 [12]: http://sbats.bandcamp.com
 [13]: #
+[14]: /credits

@@ -9,11 +9,11 @@
 -     }
 - }
 
-h2 NOTES
+h2 BLOG
 ul
-    each note in _(public.note._contents).reverse().value()
-        - var date = note.replace(/\.[^/.]+$/, '')
+    each post in _(public.post._contents).reverse().value()
+        - var date = post.replace(/\.[^/.]+$/, '')
         unless date === 'index'
             li
-                a(href='/note/#{date}')= date
-                != ' ' + getTitle(partial('/note/' + date).replace(/<\/?h2[^>]*>/, ''))
+                a(href='/post/#{date}')= date
+                != ' ' + getTitle(partial('/post/' + date).replace(/<\/?h2[^>]*>/, ''))

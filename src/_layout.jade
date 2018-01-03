@@ -1,24 +1,21 @@
+mixin navlinks (pages)
+    each page in pages
+        a.navlink(href='/' + page)= page
+
+- var links = ["blog", "code", "contact", "music"]
+
 doctype
 html
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width')
-        link(type='text/css' rel='stylesheet' href='/assets/style/min.css')
         link(type='text/css' rel='stylesheet' href='/assets/style/style.css')
         link(type='text/css' rel='stylesheet' href='/assets/style/prism.css')
     body
-        nav.nav(tabindex='-1' onclick='this.focus()')
-            .container
-                a.pagename.current(href='/') jcpst.com
-                each link in navlinks
-                    a(href='/' + link)= link
-        button.btn.btn-close.btn-sm x
-        br
-        section.container: .container
+        header
+            a#name(href='/') Joseph Post
+            nav
+                +navlinks(links)
+        main
             != yield
-        br
-        .container last deployment: 
-            em #{new Date().toLocaleString()}
-            &nbsp
-            span (#[a(href='https://github.com/jcpst/jcpst') source])
         script(src='/assets/prism.js')
