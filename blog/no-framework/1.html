@@ -1,0 +1,128 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link type="text/css" rel="stylesheet" href="/assets/style/style.css"><link type="text/css" rel="stylesheet" href="/assets/style/prism.css"></head><body><header><a id="name" href="/">Joseph Post</a><nav><a href="/blog" class="navlink">blog</a><a href="/code" class="navlink">code</a><a href="/contact" class="navlink">contact</a><a href="/music" class="navlink">music</a></nav></header><main><h2>The No Framework SPA Tutorial, part 1</h2><p><em>2017, July 17th</em>
+<!-- body --></p>
+<p>JavaScript developers are nuts.</p>
+<p>It&#39;s ok, I&#39;m one of them and I&#39;m nuts too.</p>
+<p>I want to show you something that I think is less nuts. Working without a framework or ay third party libraries. Some folks
+don&#39;t realize how realistic of an option that is.</p>
+<p>If you are a javascript developer and never built an SPA without a framework,
+please try it. Afterward, you can explore the massive ecosystem of JavaScript libraries 
+and be able to fine-tune the dependencies on your codebase, rather than tuning your thinking
+to someone else&#39;s framework.</p>
+<p>Ok, glad to hear you&#39;ll do it!</p>
+<p>No more time to waste, let&#39;s get started. We are going to build a page that 
+gives us information about countries,
+using the very nice <a href="https://restcountries.eu/">REST Countries</a> API. It will end up being around 50 lines of code,
+including our <a href="http://vanilla-js.com/">Vanilla JS</a> dependency.</p>
+<p>First off, you&#39;ll need an <code>index.html</code> page. Let&#39;s fill it with the normal junk:</p>
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;List of Countries&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;
+&lt;script&gt;
+// Woohoo, I&#39;m ready when you are!
+&lt;/script&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Looks great, that&#39;s all we need to start writing a web app. We&#39;ll be doing 
+everything in this single file for now (Single File App! SFA?). Assume all 
+following JS examples are in the <code>&lt;script&gt;</code> tag.</p>
+<p>Look ma, no React/Vue/Angular/Webpack/Rollup/Gulp/Typescript/Babel/Config! (Yet...)</p>
+<blockquote>
+<p>We&#39;ll be writing ES2015+
+without a modern-to-legacy-javascript compiler.</p>
+<p>This is ok.</p>
+<p>You should be developing with a modern browser anyway, like Chrome or Firefox. 
+Even Edge and Safari will work. Don&#39;t bother with support for IE right now, this is supposed to be fun.</p>
+</blockquote>
+<p>Let&#39;s build a little helper function, because we&#39;re going to be
+creating a lot of elements. </p>
+<pre><code class="language-javascript">function create(element, text) {
+  const el = document.createElement(element)
+  el.innerText = text
+  return el
+}
+</code></pre>
+<p>Not a bad start. Let&#39;s build a table.</p>
+<pre><code class="language-javascript">const mockData = [
+  { fish: &#39;one&#39; },
+  { fish: &#39;two&#39; },
+  { fish: &#39;red&#39; },
+  { fish: &#39;blue&#39; }
+]
+
+function Table (data) {
+  const table = create(&#39;table&#39;)
+  const thead = create(&#39;thead&#39;)
+  const tbody = create(&#39;tbody&#39;)
+  const tr = create(&#39;tr&#39;)
+  const columns = Object.keys(data.reduce((a, v) =&gt; Object.assign(a, v), {}))
+
+  columns.forEach(column =&gt; tr.appendChild(create(&#39;th&#39;, column)))
+  thead.appendChild(tr)
+  table.appendChild(thead)
+  data.forEach(record =&gt; {
+    const tr = create(&#39;tr&#39;)
+    columns.forEach(column =&gt; tr.appendChild(&#39;td&#39;, record[column]))
+    tbody.appendChild(tr)
+  }
+
+  return table.appendChild(tbody)
+}
+</code></pre>
+<p>Let&#39;s make it make our element factory a little more robust, 
+and call it <code>h()</code> so it can be <em>à la mode</em>.</p>
+<pre><code class="language-javascript">function h(element = &#39;div&#39;, classes, children) {
+  const el = document.createElement(element)
+
+  if (Array.isArray(classes)) {
+    classes.forEach(c =&gt; el.classList.add(c))
+  } else if (typeof classes === &#39;string&#39;) {
+    el.classList.add(classes)
+  }
+
+  if (Array.isArray(children)) {
+    children.forEach(c =&gt; {
+      if (c instanceof HTMLElement) {
+        el.append(c)
+      }
+    })
+  } else if (children instanceof HTMLElement) {
+    el.append(children)
+  } else if (typeof children === &#39;string&#39;) {
+    el.innerText = children
+  }
+
+  return el
+}
+</code></pre>
+<p>This provides functionality comparable to element-creating functions 
+in various <a href="https://github.com/hyperhype/hyperscript">libraries</a> <a href="https://github.com/developit/preact">and</a> <a href="https://github.com/hyperapp/hyperapp/">frameworks</a>. Let&#39;s disect it a bit:</p>
+<ul>
+<li>Calling <code>h()</code> just returns an empty <code>div</code> element. Other elements can be created like <code>h(&#39;h2&#39;)</code>.</li>
+<li>You can choose to pass in a class as a string, or several classes as an array of strings.</li>
+<li>You can choose to pass in children, which could be an element, an array of elements or some text.</li>
+</ul>
+<p>This is pretty powerful stuff. YNow we can write a table like this:</p>
+<pre><code class="language-javascript">// Nice table ya got there...
+h(&#39;table&#39;, &#39;table&#39;, [ 
+  h(&#39;thead&#39;, null,
+    h(&#39;tr&#39;, null, [
+      h(&#39;th&#39;, null, &#39;name&#39;),
+      h(&#39;th&#39;, null, &#39;capital&#39;)
+    ])
+  ),
+  h(&#39;tbody&#39;, null, [
+    h(&#39;tr&#39;, null, [
+      h(&#39;td&#39;, null, &#39;Belgium&#39;),
+      h(&#39;td&#39;, null, &#39;Brussels&#39;)
+    ]),
+    h(&#39;tr&#39;, null, [
+      h(&#39;td&#39;, null, &#39;Chile&#39;),
+      h(&#39;td&#39;, null, &#39;Santiago&#39;)
+    ])
+  ])
+])
+</code></pre>
+<p>In part 2, we&#39;ll fetch data and display it.</p></main><script src="/assets/prism.js"></script></body></html>
