@@ -27,13 +27,13 @@ ul
     text-align: right
 
 main, header
-  padding-bottom: 3em
+  padding-bottom: 1em
   max-width: 780px
   margin-left: auto
   margin-right: auto
 
 nav
-  float: right
+  padding-top: 0.5em
 
 blockquote
   padding: 1.5em
@@ -42,6 +42,9 @@ blockquote
 
 p
   padding-bottom: 0.5em
+
+pre
+  font-size: 0.8em
 
 .updated
   border-top 0
@@ -62,4 +65,8 @@ p
   color #000
   font-size 1.5em
   font-variant small-caps
-  float: left
+  padding-right: 1em
+
+@media (max-width: 455px)
+  nav
+    float: none
