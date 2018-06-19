@@ -23,7 +23,18 @@ module.exports = {
 						hotReload: true
 					}
 				}
-			}
+			},
+			{
+        test: /\.txt$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+							emitFIle: true
+						}
+          }
+        ]
+      }
 		]
 	},
 	mode,
