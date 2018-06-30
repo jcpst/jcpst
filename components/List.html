@@ -1,0 +1,24 @@
+<div class="w3-card-4 w3-margin-top">
+  <header class="w3-container w3-light-grey">
+    <h3>{title}</h3>
+  </header>
+  <ul class="w3-ul">
+    {#each items as item}
+      <li>
+        <Link 
+          description={item.description} 
+          title={item.title}
+          url={item.url} 
+        />
+      </li>
+    {/each}
+  </ul>
+</div>
+
+  <script>
+  import Link from './Link.html'
+
+  export default { 
+    components: { Link } 
+  }
+  </script>
