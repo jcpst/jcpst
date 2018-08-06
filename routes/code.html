@@ -1,0 +1,45 @@
+<List title="Code" items={links} />
+
+<script>
+import List from '../components/List.html'
+
+export default {
+  components: { List },
+  preload({ params, query }) {
+    return { 
+      links: [
+        {
+          description: 'mongo/node/angular app to browse .scl tuning files',
+          title: 'scala-tune',
+          url: 'https://jcpst.github.io/scala-tune'
+        },
+        {
+          description: 'Console game to get familiar with java',
+          title: 'dungeon',
+          url: 'https://github.com/jcpst/dungeon'
+        },
+        {
+          description: 'node.js REST API boilerplate',
+          title: 'rest-api-cli',
+          url: 'https://www.npmjs.com/package/rest-api-cli'
+        },
+        {
+          description: 'Invitiation tool built using Rust',
+          title: 'rsvp',
+          url: 'https://github.com/jcpst/rsvp'
+        },
+        {
+          description: 'Node.js task runner',
+          title: 'run-task',
+          url: 'https://github.com/jcpst/run-task'
+        },
+        {
+          description: 'Converts a Scala file (.scl) to a javascript array of frequencies that could be mapped to a MIDI controller',
+          title: 'scl-to-frequency',
+          url: 'https://github.com/jcpst/scl-to-frequency'
+        }
+      ]
+    }
+  }
+}
+</script>

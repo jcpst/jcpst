@@ -1,0 +1,8 @@
+<div>
+  {#if url}
+    <a class="w3-cell" href={url}>{title}</a>
+  {:else}
+    <span>{title}</span>
+  {/if}
+  <em>{description || ''}</em>
+</div>

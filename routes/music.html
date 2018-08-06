@@ -1,0 +1,58 @@
+<List title="Audio Engineering" items={audio} />
+<List title="Bands" items={bands} />
+<List title="Solo" items={solo} />
+
+<script>
+import List from '../components/List.html'
+
+export default {
+  components: { List },
+  preload({ params, query }) {
+    return { 
+      bands: [
+        {
+          description: '2016-present (first album in progress)',
+          title: 'dark patterns',
+          url: 'http://jcpst.com/music#'
+        },
+        {
+          description: '2015',
+          title: 'jpacks',
+          url: 'https://archive.org/details/JPACKSRPM2015Mp3'
+        },
+        {
+          description: '2009-2010',
+          title: 'your face',
+          url: 'http://yourface.bandcamp.com/'
+        },
+        {
+          description: '2004-07',
+          title: 'monitors',
+          url: 'http://monitors.bandcamp.com/'
+        },
+        {
+          description: '2001-04',
+          title: 'senator bigsby and the screws',
+          url: 'http://sbats.bandcamp.com/'
+        }
+      ],
+      solo: [
+        {
+          title: 'soundcloud page',
+          url: 'https://soundcloud.com/josephpost'
+        },
+        {
+          title: 'bandcamp page',
+          url: 'https://josephpost.bandcamp.com/'
+        }
+      ],
+      audio: [
+        {
+          title: 'recording credits',
+          url: 'http://jcpst.com/credits'
+        }
+      ]
+    }
+  }
+}
+</script>

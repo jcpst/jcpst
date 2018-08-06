@@ -1,0 +1,76 @@
+<h3>Recording Credits</h3>
+
+<List title="producers" items={producers} />
+<List title="bands / musicians" items={bands} />
+<List title="rappers" items={rappers} />
+
+<script>
+import List from '../components/List.html'
+
+export default {
+  components: {
+    List
+  },
+  preload({ params, query }) {
+    return { 
+      rappers: [
+        'Black Chill',
+        'Boo Sledge',
+        'Draytoxic',
+        'Gillie Da Kid',
+        'Lid Bux',
+        'Melo',
+        'Star B',
+        'Tamba Hali',
+        'Tank Tyler'
+      ].map(x => ({ title: x })),
+      producers: [
+        {
+          description: '(Get Up Kids)',
+          title: 'Colin Mahoney',
+        },
+        {
+          description: '(The Urge)',
+          title: 'Joe Comparato',
+        },
+        {
+          description: '(Future, Gucci Mane, Big Sean)',
+          title: 'Metro Boomin'
+        },
+        {
+          description: '(B-52\'s, George Thorogood)',
+          title: 'Pete Matthews',
+        },
+        {
+          description: '(Meek Mill, Gillie Da Kid)',
+          title: 'Rug',
+        },
+        {
+          description: '(Kanye West, Ace Hood, Future, 2 Chainz, Wiz Khalifa)',
+          title: 'Sonny Digital',
+        },
+      ],
+      bands: [
+        'Buckethead',
+        'Galactic',
+        'Grace Potter',
+        'Hot & Ugly',
+        'Ivan Neville\'s Dumpstaphunk',
+        'Jacob Fred Jazz Odyssey',
+        'John Clark',
+        'Mississippi Flapjacks',
+        'Mountain Sprout',
+        'Railroad Earth',
+        'Scott Tichenor (creator of mandolincafe.com)',
+        'Secret Chiefs 3',
+        'Shearing Pinx',
+        'Son Volt',
+        'The Avett Brothers',
+        'This Is My Condition',
+        'Trombone Shorty',
+        'Yonder Mountain String Band'
+      ].map(x => ({ title: x }))
+    }
+  }
+}
+</script>
