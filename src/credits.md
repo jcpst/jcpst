@@ -1,4 +1,4 @@
-## RECORDING CREDITS
+## Recording Credits
 
 ### rappers
 

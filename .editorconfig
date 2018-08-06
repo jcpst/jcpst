@@ -1,4 +1,7 @@
-[*.{jade,pug}]
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.pug]
 indent_style = space
 indent_size = 4
-

@@ -1,0 +1,21 @@
+include _mixins
+
+doctype html
+html
+    head
+        title jcpst.com
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width')
+        link(rel='stylesheet' href='/style.css')
+    body
+        div
+            .w3-top: .w3-bar.w3-light-gray
+                a.w3-bar-item.w3-button(href='/'): strong Joseph Post
+                a.w3-bar-item.w3-button(href='/code') code
+                a.w3-bar-item.w3-button(href='/contact') contact
+                a.w3-bar-item.w3-button(href='/music') music
+            br
+            br
+            main.w3-container: .w3-col.l6.m8
+                block content
+            .w3-rest

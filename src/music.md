@@ -1,27 +1,30 @@
-## MUSICAL OUTPUT
-
-### bands
-
-- [dark patterns][13] *2016-present* (first album in progress)
-- [jpacks][9] *2015*
-- [your face][10] *2009-2010*
-- [monitors][11] *2004-07*
-- [senator bigsby and the screws][12] *2001-04*
-
-### solo
-
-- [soundcloud page][7]
-- [bandcamp page][8]
+## Musical Output
 
 ### audio engineering
 
-[recording credits][14]
+- [recording credits](/credits)
 
-[7]: https://soundcloud.com/josephpost
-[8]: https://josephpost.bandcamp.com/
-[9]: https://archive.org/details/JPACKSRPM2015Mp3
-[10]: http://yourface.bandcamp.com
-[11]: http://monitors.bandcamp.com
-[12]: http://sbats.bandcamp.com
-[13]: #
-[14]: /credits
+### bands
+
+- dark patterns _2016-present_
+- [jpacks](https://archive.org/details/JPACKSRPM2015Mp3) _2015_
+- [your face](http://yourface.bandcamp.com) _2009-2010_
+- [monitors](http://monitors.bandcamp.com) _2004-2007_
+- [senator bigsby and the screws](http://sbats.bandcamp.com) _2001-2004_
+
+### solo
+
+- [soundcloud](https://soundcloud.com/josephpost)
+- [bandcamp](https://josephpost.bandcamp.com/)
+
+### releases
+
+- **US Gold**: [spotify][], [iTunes][], [Apple Music][], [Google Play][], [Amazon][]
+
+[distrokid]: https://distrokid.com
+[spotify]: https://open.spotify.com/album/0XN7PhGmOuP2dxXVhc4yJr
+[iTunes]: https://itunes.apple.com/us/album/us-gold-single/1373573549?uo=4&app=itunes&at=1001lry3&ct=dashboard
+[Apple Music]: https://itunes.apple.com/us/album/us-gold-single/1373573549?uo=4&app=music&at=1001lry3&ct=dashboard
+[Google Play]: https://play.google.com/store/music/album/Joseph_Post_US_Gold?id=Bxmmznn5lba22dl52b5e2ee7ydu
+[Amazon]: http://www.amazon.com/gp/product/B07C85KVX2/?tag=distrokid06-20
+

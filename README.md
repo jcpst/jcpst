@@ -6,6 +6,4 @@ getting started:
 
 run dev server:
 
-    npm start
-
-_built with [harp](http://harpjs.com/)_
+    npm run dev

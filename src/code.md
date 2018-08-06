@@ -1,4 +1,4 @@
-## OPEN-SOURCE PROJECTS
+## Open-Source Projects
 
 - [scala-tune][1] - mongo/node/angular app to browse .scl tuning files
 - [dungeon][2] - Console game to get familiar with java

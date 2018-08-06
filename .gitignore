@@ -1,8 +1,3 @@
-node_modules
-build
-*.swp
-.idea
-
-# ignore generated files
-src/_generated/
-public
+.idea/
+node_modules/
+build/

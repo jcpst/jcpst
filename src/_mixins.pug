@@ -1,0 +1,16 @@
+mixin link(name, url)
+    a(href=url)= name
+
+mixin card(title)
+    .w3-card-4.w3-margin.w3-col.l4.m5.s11
+        header.w3-container
+            h3= title
+        .w3-container
+            block
+        footer.w3-container
+    //.w3-cell-row.w3-padding
+    //    .w3-quarter: p
+    //    .w3-card-4
+    //        h3.w3-margin= title
+    //        block
+    //    .w3-quarter: p
