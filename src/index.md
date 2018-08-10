@@ -45,4 +45,3 @@ _I'm interested in:_
     - Aurdor
 - Just Intonation
 - Non-Duality
-- Casual interest in Satanism
