@@ -12,8 +12,9 @@ require('./helpers/colors')
 const PathAttrs = require('./helpers/path-attrs')
 const { markdownFileToHtml, pugFileToHtml } = require('./helpers/compile')
 
-const source = path.join(__dirname, '..', 'src')
-const destination = path.join(__dirname, '..', 'build')
+const projectRoot = path.join(__dirname, '..')
+const source = path.join(projectRoot, 'src')
+const destination = path.join(projectRoot, 'build')
 const styleFile = path.join(destination, 'style.css')
 
 /**
@@ -26,16 +27,16 @@ const styleFile = path.join(destination, 'style.css')
  * @param dest {string} - Path to the destination directory.
  */
 function convertToStaticResource(file, dest) {
-  if (file.isHidden()) return
+  if (file.isHidden) return
 
   const outFile = path.join(dest, file.name + '.html')
   const outDir = path.parse(outFile).dir
 
   fs.ensureDirSync(outDir)
 
-  if (file.isPug()) {
+  if (file.isPug) {
     fs.writeFileSync(outFile, pugFileToHtml(file))
-  } else if (file.isMd() && !file.pugFileExists()) {
+  } else if (file.isMd && !file.pugFileExists) {
     fs.writeFileSync(outFile, markdownFileToHtml(file))
   } else {
     fs.copySync(file.fullPath, path.join(dest, file.base))
@@ -59,13 +60,20 @@ function compileFiles(src, dest) {
     const fullPath = path.join(src, srcDirFiles[i])
     const file = Object.create(PathAttrs).init(fullPath)
 
-    if (file.isDir()) {
+    if (file.isDir) {
       compileFiles(fullPath, path.join(dest, file.name))
     } else {
       convertToStaticResource(file, dest)
     }
   }
 }
+
+//=============================================================================
+// Copy Files
+//=============================================================================
+fs.copy(path.join(projectRoot, 'CNAME'), path.join(destination, 'CNAME'))
+  .then(() => console.log('>>> copied CNAME'.green))
+  .catch(err => console.log('fuck. CNAME copy failed'.red, err))
 
 //=============================================================================
 // HTML Build

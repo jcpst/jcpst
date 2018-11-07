@@ -6,7 +6,7 @@
 - [rsvp][4] - Invitiation tool built using Rust
 - [run-task][5] - Node.js task runner
 - [scl-to-frequency][6] - Converts a Scala file (.scl) to a javascript array of frequencies that could be mapped to a MIDI controller
-
+- [this site][7] - hand-rolled static site generation
 
 [1]: https://jcpst.github.io/scala-tune
 [2]: https://github.com/jcpst/dungeon
@@ -14,3 +14,4 @@
 [4]: https://github.com/jcpst/rsvp
 [5]: https://github.com/jcpst/run-task
 [6]: https://github.com/jcpst/scl-to-frequency
+[7]: https://github.com/jcpst/jcpst

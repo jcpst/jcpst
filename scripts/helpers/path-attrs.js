@@ -13,33 +13,23 @@ const path = require('path')
  *   base: string,
  *   ext: string,
  *   name: string,
- *   isDir(): boolean,
- *   isHidden(): boolean,
- *   isPug(): boolean,
- *   isMd(): boolean,
- *   pugFileExists(): boolean
+ *   isDir: boolean,
+ *   isHidden: boolean,
+ *   isPug: boolean,
+ *   isMd: boolean,
+ *   pugFileExists: boolean
  * }}
  */
 const PathAttrs = {
   init(fullpath) {
-    this.fullPath = fullpath
     Object.assign(this, path.parse(fullpath))
+    this.fullPath = fullpath
+    this.isDir = fs.lstatSync(this.fullPath).isDirectory()
+    this.isHidden = this.name[0] === '_'
+    this.isPug = this.ext.match(/\.(jade|pug)/) !== null
+    this.isMd = this.ext.match(/\.(md|markdown)/) !== null
+    this.pugFileExists = fs.existsSync(path.join(this.dir, this.name + '.pug'))
     return this
-  },
-  isDir() {
-    return fs.lstatSync(this.fullPath).isDirectory()
-  },
-  isHidden() {
-    return this.name[0] === '_'
-  },
-  isPug() {
-    return this.ext.match(/\.(jade|pug)/) !== null
-  },
-  isMd() {
-    return this.ext.match(/\.(md|markdown)/) !== null
-  },
-  pugFileExists() {
-    return fs.existsSync(path.join(this.dir, this.name + '.pug'))
   }
 }
 

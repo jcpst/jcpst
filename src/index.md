@@ -17,31 +17,6 @@ _I'm a:_
 
 _I'm interested in:_
 
-- Programming Languages
-    - JavaScript
-    - Rust
-    - Lisps (PicoLisp, Clojure, Ferret)
-    - Forth
-    - Go
-    - Bash / PowerShell
-- Languages made for audio synthesis
-    - SuperCollider
-    - ChucK
-    - PureData
-- Guitars
-- Tube Guitar Amplifiers
-- Guitar Pedals
-- Beer, drinking and brewing
-- Casual Cycling
-- Operating Systems
-    - Arch Linux
-    - FreeBSD
-    - Redox
-    - ReactOS
-- Digital Audio Workstations
-    - Ableton
-    - Renoise
-    - SunVox
-    - Aurdor
-- Just Intonation
-- Non-Duality
+Ableton, Arch Linux, Aurdor, Baritone Guitars, Bash, Bass Guitar, Beer, Camping, Clojure, Cycling, Entheogens, Experimental Music Genres, FreeBSD, Hiking, Just Intonation, Nature Conservation, Non-Duality, ReactOS, Redox, Renoise, Rust, SunVox, Supercollider, Tube Amps, Veganism...
+
+...and a bunch of other things that could be used to create a nice profile for marketers.

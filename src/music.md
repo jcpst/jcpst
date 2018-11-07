@@ -21,6 +21,8 @@
 
 - **US Gold**: [spotify][], [iTunes][], [Apple Music][], [Google Play][], [Amazon][]
 
+<!-- links -->
+
 [distrokid]: https://distrokid.com
 [spotify]: https://open.spotify.com/album/0XN7PhGmOuP2dxXVhc4yJr
 [iTunes]: https://itunes.apple.com/us/album/us-gold-single/1373573549?uo=4&app=itunes&at=1001lry3&ct=dashboard
