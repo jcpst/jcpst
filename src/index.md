@@ -4,7 +4,7 @@ I have a practically non-existant social media presence, so if something on here
 
 _I'm interested in:_
 
-Ableton, Arch Linux, Aurdor, Baritone Guitars, Bash, Bass Guitar, Beer, Camping, Clojure, Cycling, Entheogens, Experimental Music Genres, FreeBSD, Hiking, Just Intonation, Nature Conservation, Non-Duality, ReactOS, Redox, Renoise, Rust, SunVox, Supercollider, Tube Amps, Veganism...
+Arch Linux, Audio Synthesis, Baritone Guitars, Bass Guitar, Beer, BSDs, Camping, Cycling, DAWs, Death Metal, Entheogens, Hiking, Just Intonation, Lisps, Nature Conservation, Non-Duality, Rust-lang, Stock Markets, Supercollider, Tube Amps, Veganism, Zsh...
 
 ...and a bunch of other things that could be used to create a nice profile for marketers.
 
