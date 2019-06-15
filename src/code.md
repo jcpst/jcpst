@@ -1,5 +1,6 @@
 ## Open-Source Projects
 
+- [johnston][8] - rust library for calculating just intonation pitch lattices
 - [scala-tune][1] - mongo/node/angular app to browse .scl tuning files
 - [dungeon][2] - Console game to get familiar with java
 - [rest-api-cli][3] - node.js REST API boilerplate
@@ -15,3 +16,4 @@
 [5]: https://github.com/jcpst/run-task
 [6]: https://github.com/jcpst/scl-to-frequency
 [7]: https://github.com/jcpst/jcpst
+[8]: https://github.com/jcpst/johnston
