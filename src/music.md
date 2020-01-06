@@ -1,13 +1,14 @@
 ## Musical Output
 
-> _Upcoming album to be released in late 2019._
-
 ### releases
 
 > _Available wherever digital music is sold._
 
-- **US Gold** - single - _2011_
-- **Tree Talk** - album - _2009_
+- [Bowing Green Massacre](https://distrokid.com/hyperfollow/josephpost/bowling-green-massacre) - _2016_
+- [US Gold](https://distrokid.com/hyperfollow/josephpost/daLO) - _2011_
+- [Recovery](https://distrokid.com/hyperfollow/josephpost/recovery) - _2010_
+- [Tree Talk](https://distrokid.com/hyperfollow/josephpost/tree-talk) - album - _2009_
+- [Guitar Solo 8](https://distrokid.com/hyperfollow/josephpost/guitar-solo-8) - _2007_
 
 ### audio engineering
 
