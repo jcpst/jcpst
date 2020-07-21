@@ -14,3 +14,10 @@ nav > ul > li {
 main {
     max-width: 650px
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #262626
+		color: #ddd
+	}
+}
