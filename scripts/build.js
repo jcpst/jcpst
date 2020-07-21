@@ -2,11 +2,6 @@
 
 const fs = require('fs-extra')
 const path = require('path')
-const purify = require('purify-css')
-
-// Hack to require css. From here: https://stackoverflow.com/a/12753026/3957261
-require.extensions['.css'] = (m, f) => { m.exports = fs.readFileSync(f, 'utf8') }
-const w3Css = require('w3-css')
 
 require('./helpers/colors')
 const PathAttrs = require('./helpers/path-attrs')
@@ -15,7 +10,6 @@ const { markdownFileToHtml, pugFileToHtml } = require('./helpers/compile')
 const projectRoot = path.join(__dirname, '..')
 const source = path.join(projectRoot, 'src')
 const destination = path.join(projectRoot, 'build')
-const styleFile = path.join(destination, 'style.css')
 
 /**
  * This function is reponsible for calling compilers and writing the results to
@@ -81,13 +75,3 @@ fs.copy(path.join(projectRoot, 'CNAME'), path.join(destination, 'CNAME'))
 
 compileFiles(source, destination)
 console.log('>>> html files compiled'.green)
-
-//=============================================================================
-// CSS Build
-//=============================================================================
-
-purify(['./build/**/*.html'], w3Css, {
-  minify: true,
-  output: styleFile
-})
-console.log('>>> css purified'.green)
