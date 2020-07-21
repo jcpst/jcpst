@@ -1,0 +1,19 @@
+extends _layout.pug
+	
+mixin def(name, url, desc)
+    dt: a(href=url)= name
+    dd= desc
+
+mixin def-gh(name, desc)
+    +def(name, 'https://github.com/jcpst/' + name, desc)
+
+block content
+    h2 Open-Source Projects
+    dl
+        +def-gh('johnston', 'rust library for calculating just intonation pitch lattices')
+        +def-gh('dungeon', 'Console game to get familiar with java')
+        +def-gh('rest-api-cli', 'node.js REST API boilerplate')
+        +def-gh('rsvp', 'Invitiation tool built using Rust')
+        +def-gh('run-task', 'Node.js task runner')
+        +def-gh('scl-to-frequency', 'Converts a Scala file (.scl) to a javascript array of frequencies that could be mapped to a MIDI controller')
+        +def-gh('jcpst', 'Uses hand-rolled static site generation, for better or worse')
