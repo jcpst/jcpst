@@ -17,6 +17,7 @@ const path = require('path')
  *   isHidden: boolean,
  *   isPug: boolean,
  *   isMd: boolean,
+ *   isOrg: boolean,
  *   pugFileExists: boolean
  * }}
  */
@@ -28,6 +29,7 @@ const PathAttrs = {
     this.isHidden = this.name[0] === '_'
     this.isPug = this.ext.match(/\.(jade|pug)/) !== null
     this.isMd = this.ext.match(/\.(md|markdown)/) !== null
+    this.isOrg = this.ext.match(/\.(org)/) !== null
     this.pugFileExists = fs.existsSync(path.join(this.dir, this.name + '.pug'))
     return this
   }

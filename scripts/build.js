@@ -5,7 +5,7 @@ const path = require('path')
 
 require('./helpers/colors')
 const PathAttrs = require('./helpers/path-attrs')
-const { markdownFileToHtml, pugFileToHtml } = require('./helpers/compile')
+const { markdownFileToHtml, pugFileToHtml, orgFileToHtml } = require('./helpers/compile')
 
 const projectRoot = path.join(__dirname, '..')
 const source = path.join(projectRoot, 'src')
@@ -32,6 +32,8 @@ function convertToStaticResource(file, dest) {
     fs.writeFileSync(outFile, pugFileToHtml(file))
   } else if (file.isMd && !file.pugFileExists) {
     fs.writeFileSync(outFile, markdownFileToHtml(file))
+  } else if (file.isOrg && !file.pugFileExists) {
+	fs.writeFileSync(outFile, orgFileToHtml(file))
   } else {
     fs.copySync(file.fullPath, path.join(dest, file.base))
   }

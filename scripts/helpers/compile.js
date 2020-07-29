@@ -38,16 +38,28 @@ function pugFileToHtml(file) {
  * @returns {String}
  */
 function markdownFileToHtml(file) {
+  const ext = 'md'
+  const transformString = 'marked(gfm=true headerIds=true mangle=true)'
+  return jsTransform(file, ext, transformString)
+}
+
+function orgFileToHtml(file) {
+  const ext = 'org'
+  const transformString = 'org'
+  return jsTransform(file, ext, transformString)
+}
+
+function jsTransform(file, ext, transformString) {
   return pug.render(
     [
       'extends /_layout.pug',
       'block content',
-      '  :marked(gfm=true mangle=true)',
+	  '  :' + transformString,
       ...fileLines(file.fullPath).map(l => l.padStart(l.length + 4))
     ].join(os.EOL),
     {
       basedir: source,
-      filename: file.name + '.md',
+      filename: file.name + ext,
       filters: {
         marked
       }
@@ -57,5 +69,6 @@ function markdownFileToHtml(file) {
 
 module.exports = {
   markdownFileToHtml,
-  pugFileToHtml
+  pugFileToHtml,
+  orgFileToHtml
 }
