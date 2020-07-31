@@ -18,21 +18,23 @@ const path = require('path')
  *   isPug: boolean,
  *   isMd: boolean,
  *   isOrg: boolean,
+ *   canBeConverted: boolean,
  *   pugFileExists: boolean
  * }}
  */
 const PathAttrs = {
-  init(fullpath) {
-    Object.assign(this, path.parse(fullpath))
-    this.fullPath = fullpath
+  init(fullPath) {
+    Object.assign(this, path.parse(fullPath))
+    this.fullPath = fullPath
     this.isDir = fs.lstatSync(this.fullPath).isDirectory()
     this.isHidden = this.name[0] === '_'
     this.isPug = this.ext.match(/\.(jade|pug)/) !== null
     this.isMd = this.ext.match(/\.(md|markdown)/) !== null
     this.isOrg = this.ext.match(/\.(org)/) !== null
+    this.canBeConverted = this.isMd || this.isOrg || this.isPug
     this.pugFileExists = fs.existsSync(path.join(this.dir, this.name + '.pug'))
     return this
-  }
+  },
 }
 
 module.exports = PathAttrs
