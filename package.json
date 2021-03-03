@@ -22,7 +22,7 @@
     "semi": false
   },
   "dependencies": {
-    "pug": "^3.0.0"
+    "pug": "^3.0.1"
   },
   "devDependencies": {
     "fs-extra": "^9.0.1",
