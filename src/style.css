@@ -15,9 +15,25 @@ main {
     max-width: 650px
 }
 
+em {
+    font-size: 1.1em;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #262626
-		color: #ddd
-	}
+        background-color: #353434;
+        color: #ddd;
+    }
+    a:link {
+        color: rgb(80, 255, 80);
+    }
+    a:visited {
+        color: rgb(51, 199, 199);
+    }
+    a:hover {
+        color: rgb(98, 223, 98);
+    }
+    a:active {
+        color: rgb(66, 248, 66);
+    }
 }
