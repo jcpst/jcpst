@@ -1,0 +1,16 @@
+#+TITLE: Open Source Projects
+
+- [[https://github.com/jcpst/johnston][johnston]] ::
+  rust library for calculating just intonation pitch lattices
+- [[https://github.com/jcpst/dungeon][dungeon]] ::
+  Console game to get familiar with java
+- [[https://github.com/jcpst/rest-api-cli][rest-api-cli]] ::
+  node.js REST API boilerplate
+- [[https://github.com/jcpst/rsvp][rsvp]] ::
+  Invitation tool built using Rust
+- [[https://github.com/jcpst/run-task][run-task]] ::
+  Node.js task runner
+- [[https://github.com/jcpst/scl-to-frequency][scl-to-frequency]] ::
+  Converts a Scala file (.scl) to a javascript array of frequencies that could be mapped to a MIDI controller
+- [[https://github.com/jcpst/jcpst][jcpst]] ::
+  Uses hand-rolled static site generation, for better or worse

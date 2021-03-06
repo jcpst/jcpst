@@ -11,6 +11,7 @@
     "build": "node scripts/build",
     "clean": "rimraf build/**",
     "dev": "nodemon -e md,pug,css -w src -x \"run-s clean build serve\"",
+    "format": "prettier --write scripts",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "serve": "hs build -c-1",

@@ -21,8 +21,8 @@ function ANSIWrap(color, text) {
  *   white, grey, black, blue, cyan, green, magenta,
  *   red, yellow, bold, italic, underline, inverse
  */
-Object.keys(colors).forEach(color => {
-  String.prototype.__defineGetter__(color, function() {
+Object.keys(colors).forEach((color) => {
+  String.prototype.__defineGetter__(color, function () {
     return ANSIWrap(color, this)
   })
 })
