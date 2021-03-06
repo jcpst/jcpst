@@ -4,71 +4,74 @@ const fs = require('fs')
 const path = require('path')
 const os = require('os')
 const pug = require('pug')
-const marked = require('jstransformer-marked').render
 
 const source = path.join(__dirname, '..', '..', 'src')
 
+/**
+ * @param {PathAttrs} file
+ * @returns {string}
+ */
+function getTransformer(file) {
+  if (file.isOrg) {
+    return ':org(headerOffset=1 exportFromLineNumber=false suppressSubScriptHandling=false suppressAutoLink=false)'
+  } else if (file.isMd) {
+    return ':marked(gfm=true headerIds=true mangle=true)'
+  } else if (file.isPug) {
+    return ''
+  }
+}
 
 /**
- * @function fileLines
  * @param fileName {string}
- * @returns {string[]}
+ * @returns {string}
  */
-function fileLines(fileName) {
-  return fs.readFileSync(fileName, 'utf-8').split(os.EOL)
+function read(fileName) {
+  return fs.readFileSync(fileName, 'utf-8')
 }
 
 /**
- * @function pugFileToHtml
- * @param file {PathAttrs}
- * @returns {String}
+ * @param {number} i
+ * @returns {function(*): string}
  */
-function pugFileToHtml(file) {
-  return pug.renderFile(file.fullPath, {
-    filename: file.name,
-    filters: {
-      marked
-    }
-  })
+function indent(i) {
+  return (line) => line.padStart(line.length + i)
 }
 
 /**
- * @function markdownFileToHtml
- * @param file {PathAttrs}
- * @returns {String}
+ *
+ * @param {PathAttrs} file
+ * @param {string} transformer
+ * @returns {*}
  */
-function markdownFileToHtml(file) {
-  const ext = 'md'
-  const transformString = 'marked(gfm=true headerIds=true mangle=true)'
-  return jsTransform(file, ext, transformString)
-}
-
-function orgFileToHtml(file) {
-  const ext = 'org'
-  const transformString = 'org'
-  return jsTransform(file, ext, transformString)
-}
-
-function jsTransform(file, ext, transformString) {
+function jsTransform(file, transformer) {
   return pug.render(
     [
       'extends /_layout.pug',
       'block content',
-	  '  :' + transformString,
-      ...fileLines(file.fullPath).map(l => l.padStart(l.length + 4))
+      '  ' + transformer,
+      ...read(file.fullPath).split(os.EOL).map(indent(4)),
     ].join(os.EOL),
     {
       basedir: source,
-      filename: file.name + ext,
-      filters: {
-        marked
-      }
+      filename: file.name + file.ext,
     }
   )
 }
 
+/**
+ * @param {PathAttrs} file
+ * @returns {string}
+ */
+function compile(file) {
+  const transformer = getTransformer(file)
+
+  if (transformer === undefined) {
+    return fs.readFileSync(file.fullPath, 'utf-8')
+  } else {
+    return jsTransform(file, transformer)
+  }
+}
+
 module.exports = {
-  markdownFileToHtml,
-  pugFileToHtml,
-  orgFileToHtml
+  compile,
 }
