@@ -1,0 +1,85 @@
+#+TITLE: Recipes
+#+AUTHOR: Joseph Post
+#+OPTIONS: prop
+#+COLUMNS: %15ITEM %TOTAL_TIME %ACTIVE_TIME %SERVES
+
+* Chipotle Mac & Cheese With Roasted Brussels Sprouts
+:PROPERTIES:
+:ACTIVE_TIME: 15
+:SERVES: 4
+:TOTAL_TIME: 30
+:URL: https://www.theppk.com/2013/06/chipotle-mac-cheese-with-roasted-brussel-sprouts/
+:END:
+** Ingredients
+| Ingredient               | Amount   | Preperation      |
+|--------------------------+----------+------------------|
+| Pasta - Macaroni         | 8 oz     |                  |
+| Brussels Sprouts         | 1 lb     | quartered        |
+| Olive Oil                | 1 T      |                  |
+|--------------------------+----------+------------------|
+| Cashews                  | 1 c      | soak for 2 hours |
+| Chipotles in adobo suace | 4        | seeded           |
+| Vegetable Broth          | 1 c      |                  |
+| Garlic Clove             | 2        |                  |
+| Nutritional Yeast        | 2 T      |                  |
+| White Miso               | 2 T      |                  |
+| Salt                     | to taste |                  |
+** Directions
+1. Preheat oven to 425 F for Brussels, Boil pot of salted water for pasta.
+2. Toss quartered brussels in oil and salt. Bake for 18 minutes.
+3. Drain cashews. Add all sauce ingredients to blender and blend until
+   completely smooth.
+4. Drain pasta. Add sauce to pot and put pasta back in, Cook on low
+   for 3 minutes to thicken.
+6. Taste for salt. Toss in brussels sprouts.
+* Potato Salad
+:PROPERTIES:
+:ACTIVE_TIME: 20
+:SERVES: 8
+:TOTAL_TIME: 120
+:URL: https://www.bettycrocker.com/recipes/russet-potato-salad/15e65306-fd47-49a2-b551-613667ad31c3
+:END:
+** Ingredients
+| Ingredient           | Amount       | Preperation    |
+|----------------------+--------------+----------------|
+| Potatoes, russet     | 3 lb         | quartered      |
+| Carrots              | 2            | jullienned     |
+| Onion, Red           | 1/2 c        | finely chopped |
+|----------------------+--------------+----------------|
+| Mayo                 | 1 c          |                |
+| Mustard, Dijon       | 2 T          |                |
+| Mustard, Spicy Brown | 2 T          |                |
+| pickles              | 1/2 c minced |                |
+| salt                 | 1/2 t        |                |
+| pepper               | 1/2 t        |                |
+|                      |              |                |
+|                      |              |                |
+** Directions
+1. Add potatoes to a large pot with water. Boil, reduce to low, then cover.
+   Cook for 20 minutes or until tender. Drain, and cool for 10 minutes.
+2. Peel potatoes, cut 1/2 inch cubes, place in bowl.
+3. In another bowl, mix mayo, mustard, pickles, salt.
+4. Add carrots and mayo mixture to potatoes and stir until covered.
+5. Cover and chill for 1 hour before serving.
+* Pasta Salad
+:PROPERTIES:
+:DESCRIPTION: Just a simple, classic pasta salad. Can be made vegan.
+:COOKING_TIME: 20 minutes
+:END:
+** Ingredients
+| Ingredient               | Amount     |
+|--------------------------+------------|
+| Pasta - Fusili or Shells | 8 oz       |
+| Cherry Tomato            | 10 chopped |
+| Cucumber                 | 1 chopped  |
+| Red Bell Pepper          | 1 chopped  |
+|--------------------------+------------|
+| Mayo                     | 3 T        |
+| Mustard, dijon           | 1 T        |
+| Olive Oil                | 1 T        |
+| Salt                     | 1 t        |
+** Directions
+1. Cook pasta according to package directions. Let cool before using.
+2. Chop bell pepper and tomato. Peel and chop cucumber.
+3. Mix mayo, mustard, olive oil and salt in a separate bowl.
+4. Combine all ingredients, chill for at least 30 minutes.

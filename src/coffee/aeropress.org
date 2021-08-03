@@ -1,0 +1,68 @@
+#+TITLE: AeroPress
+
+* AeroPress vs AeroPress Go
+
+  Many have already weighed in on comparing the Aeropress to the Aeropress Go.
+  I don't think I need to go there. Rather, I'll describe why I bother keeping both,
+  and where I would use one over the other.
+
+** Travelling
+
+  | Scenario                    | AeroPress | AeroPress Go |
+  |-----------------------------+-----------+--------------|
+  | Less than 80g coffee needed |           | X            |
+  | Car Camping                 | X         | X            |
+  | Backpacking                 |           | X            |
+
+*** Less than 80g coffee needed
+
+    To me, the AeroPress Go is the clear winner in this scenario.
+
+    Pregrind the coffee right before the trip, put it in a ziplock and stuff it into the shaft
+    of the plunger. Leave the stirrer and scoop at home. Everything you need packs into the
+    serving container. As long as you have a way to heat water, this setup is about as simple
+    as it gets.
+
+    The Hoffmann technique uses about an 18/1 ratio. This makes enough for seven
+    200ml servings. Only you can be the judge of how long this will last.
+
+    On a recent overnight with my wife, I packed 33g of ground coffee and used a
+    variation of the Hoffmann technique to brew a concentrate. This was then diluted
+    after the brew to make two cups.
+
+    If I need more than 80g, it's likely I'll need a grinder. If that's the case, then
+    the AeroPress Go loses some appeal, as it's no longer a self-contained coffee kit.
+
+*** Car Camping
+
+    To me, car camping is about enjoying the outdoors in comfort. The only restriction
+    I place on coffee tools is that they don't require electricity.
+
+    If I'm with a group, I'm going to bring some fun tools and share. There will be
+    pourovers, french press, moka pot, flair signature, a few different roasts...
+    we will nerd-out on some coffee.
+
+    The exception to this is if I'm just doing an overnight.
+
+*** Backpacking
+
+    Honestly, this is something I haven't done in a while. My wife & kids have zero interest
+    in roughing it, so I have to plan it out if I'm going to ditch them and explore the great
+    outdoors. With that pointless explanation out of the way, here's what I /would/ do now that I
+    am a coffee snob.
+
+    I think the AeroPress Go makes sense here. A grinder, I'm not so sure. If I wanted to shave
+    off the extra pound, I might just take instant. I have some Mount Hagen- It's actually decent.
+    Finally, if I was ok with skipping a wam cup, I could take 100mg caffiene pills. Not as
+    enjoyable, but could take out the need to heat water in the AM while treating caffiene withdrawl
+    symptoms.
+
+** Technique
+    
+   I'm a fan of James Hoffmann's [[https://youtu.be/j6VlT_jUVPc][Ultimate AeroPress technique]]. It's simple, reduces
+   the tools you need, produces a great cup, and is a solid base for other brewing recipes.
+
+   It can also be brewed reliably without a scale. When measuring, observe where the grounds
+   top off in the shaft, and also where the water lines up against the numbers on the side.
+
+   
