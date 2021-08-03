@@ -1,9 +1,1 @@
-getting started:
-
-    git clone https://gitlab.com/jcpst/jcpst.git
-    cd jcpst
-    npm install
-
-run dev server:
-
-    npm run dev
+I'm a family man. I also write code, write music, learn stuff, and go camping.
