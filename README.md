@@ -1,1 +1,1 @@
-I'm a family man. I also write code, write music, learn stuff, and go camping.
+Stuff I'm willing to tell the world about myself: I write code, write music, and like coffee.
