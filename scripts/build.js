@@ -69,7 +69,7 @@ function compileFiles(src, dest) {
 //=============================================================================
 fs.copy(path.join(projectRoot, 'CNAME'), path.join(destination, 'CNAME'))
   .then(() => console.log('>>> copied CNAME'.green))
-  .catch(err => console.log('fuck. CNAME copy failed'.red, err))
+  .catch(err => console.log('CNAME copy failed'.red, err))
 
 //=============================================================================
 // HTML Build
