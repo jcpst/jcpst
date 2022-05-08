@@ -1,21 +1,32 @@
-## Intro
+Hello. Thanks for visitng my personal site!
 
-Hello. I'm a software developer that currently lives in the midwest. Prior to that,
-I worked as a recording engineer. I have 3 kids, 2 dogs, and one wife. 
+<article data-published-on="2022-05-08">
+    <header><em>2021, May 16th</em></header>
+    <p>
+        A few months back I participated in the 2022 <a href="https://www.rpmchallenge.com/faq">RPM Challenge</a>.
+        I wrote 10 songs, start-to-finish, within the month of February. The best part of it was
+        getting out of a rut of starting a composition and never finishing it. 
+    </p>
+    <p>
+        I make no claims about the greatness of the work, but I do think some interesting ideas were 
+        expressed, especially the acoustic bits and field recordings. A few tracks are cleary me just 
+        trying to get to the 10 song mark before the end of the month. You can listen to the 
+        recordings <a href="https://alonetone.com/jcpst/playlists/rpm-2022">here</a>.
+    </p>
+    
+</article>
 
-The goal with this site is to share things I've learned, or things I've created. I have a
-distain for modern social media. I'm interested in others that publish their own sites.
+<article data-published-on="2021-05-16">
+    <header><em>2021, May 16th</em></header>
+    Things I've been working on since my last update: brewing coffee, experimenting with sampling and sequencing hardware and software.
+</article>
 
-## Updates
+<article data-published-on="2020-07-29">
+    <header><em>2020, July 29th</em></header>
+    I wanted to parse `.org` files for this site, so I made a jsTransformer module: <a href="https://www.npmjs.com/package/jstransformer-org">link</a>
+</article>
 
-### 2021-05-16
-
-Things I've been working on since my last update: brewing coffee, experimenting with sampling and sequencing hardware and software.
-
-### 2020-07-29
-
-I wanted to parse `.org` files for this site, so I made a jsTransformer module: [link](https://www.npmjs.com/package/jstransformer-org)
-
-### 2020-07-20 
-
-Decided it was time to redo this site. I wanted to see how little styling I could use without my wife thinking the page looks "broken".
+<article data-published-on="2020-07-20">
+    <header><em>2020, July 20th</em></header>
+    Decided it was time to redo this site. I wanted to see how little styling I could use without my wife thinking the page looks "broken".
+</article>

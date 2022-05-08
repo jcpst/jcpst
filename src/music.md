@@ -1,8 +1,6 @@
 ## Musical Output
 
-### releases
-
-> _Available wherever digital music is sold._
+### _releases_
 
 - [Bowing Green Massacre](https://distrokid.com/hyperfollow/josephpost/bowling-green-massacre) - _2016_
 - [US Gold](https://distrokid.com/hyperfollow/josephpost/daLO) - _2011_
@@ -10,11 +8,11 @@
 - [Tree Talk](https://distrokid.com/hyperfollow/josephpost/tree-talk) - album - _2009_
 - [Guitar Solo 8](https://distrokid.com/hyperfollow/josephpost/guitar-solo-8) - _2007_
 
-### audio engineering
+### _audio engineering_
 
 - [recording credits](/credits)
 
-### bands
+### _bands_
 
 - dark patterns -  _2016-2019_
 - [jpacks](https://archive.org/details/JPACKSRPM2015Mp3) - _2015_

@@ -4,15 +4,17 @@ html
         title jcpst.com
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width')
-        link(rel='stylesheet' href='/style.css')
+        link(rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css")
     body
-        h2 Joseph Post
-        nav: ul
-            li: a(href='/') home
-            li: a(href='/code') code
-            //- li: a(href='/coffee') coffee
-            li: a(href='/contact') contact
-            li: a(href='/music') music
+        header.container
+            span Joseph Post
+            nav: ul
+                li: a(href='/') home
+                li: a(href='/code') code
+                //- li: a(href='/coffee') coffee
+                li: a(href='/contact') contact
+                li: a(href='/music') music
+                li: a(href='/about') about
         hr
-        main
+        main.container
             block content

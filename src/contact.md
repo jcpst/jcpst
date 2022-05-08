@@ -1,3 +1,3 @@
 ## Contact
 
-- [email](mailto:joe@jcpst.com)
+[email](mailto:joe@jcpst.com)
