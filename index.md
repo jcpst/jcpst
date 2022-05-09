@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><title>jcpst.com</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"></head><body><main class="container"><nav><ul><li>Joseph Post</li><li><a href="/">home</a></li><li><a href="/code">code</a></li><li><a href="/contact">contact</a></li><li><a href="/music">music</a></li><li><a href="/about">about</a></li></ul></nav><hr><article data-published-on="2022-05-08">
+<article data-published-on="2022-05-08">
     <header><em>2022, May 16th</em></header>
     <p>
         A few months back I participated in the 2022 <a href="https://www.rpmchallenge.com/faq">RPM Challenge</a>.
@@ -27,4 +27,4 @@
 <article data-published-on="2020-07-20">
     <header><em>2020, July 20th</em></header>
     Decided it was time to redo this site. I wanted to see how little styling I could use without my wife thinking the page looks "broken".
-</article></main></body></html>
+</article>
