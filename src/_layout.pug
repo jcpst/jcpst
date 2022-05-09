@@ -6,15 +6,14 @@ html
         meta(name='viewport' content='width=device-width')
         link(rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css")
     body
-        header.container
-            span Joseph Post
+        main.container
             nav: ul
+                li Joseph Post
                 li: a(href='/') home
                 li: a(href='/code') code
                 //- li: a(href='/coffee') coffee
                 li: a(href='/contact') contact
                 li: a(href='/music') music
                 li: a(href='/about') about
-        hr
-        main.container
+            hr
             block content

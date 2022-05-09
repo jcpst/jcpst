@@ -1,5 +1,3 @@
-Hello. Thanks for visitng my personal site!
-
 <article data-published-on="2022-05-08">
     <header><em>2021, May 16th</em></header>
     <p>
